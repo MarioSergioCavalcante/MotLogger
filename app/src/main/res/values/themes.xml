@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.MTLogger" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:statusBarColor">@color/black</item>
+    </style>
+
+    <style name="Theme.App.Starting" parent="Theme.SplashScreen">
+        <!-- Para preencher a tela, usamos a imagem como fundo da janela (windowBackground) -->
+        <item name="android:windowBackground">@drawable/meu_logo</item>
+
+        <!-- Tornamos o ícone central transparente para não sobrepor -->
+        <item name="windowSplashScreenAnimatedIcon">@android:color/transparent</item>
+
+        <item name="postSplashScreenTheme">@style/Theme.MTLogger</item>
+    </style>
+</resources>
